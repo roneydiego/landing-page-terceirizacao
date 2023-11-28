@@ -1,0 +1,448 @@
+body {
+    background-color: #F6F1F1;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #F6F1F1;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 10vh 15vw;
+}
+
+.business-logo {
+    width: 7rem;
+    height: max-content;
+}
+
+.header {
+    background-color: transparent;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    position: absolute;
+    width: 69vw;
+}
+
+.header > div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+}
+
+.item-nav {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease-in-out;
+}
+
+.item-nav:hover {
+    color: #7f8080;
+}
+
+.data-stats {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.business-color {
+    color: #004aac;
+}
+
+
+.home > div {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 40vw;
+}
+
+
+.home {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    background-image: url(images/pexels-pixabay-258160.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 60vh;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+
+.brief-description {
+    margin: 0;
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.saiba-mais-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #000000;
+    border: 2px solid #000000;
+}
+
+.saiba-mais-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    
+}
+
+.btn {
+    padding: 1rem 3rem;
+    margin: 1rem 0.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    width: fit-content;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.contact-btn {
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+}
+
+.contact-btn:hover {
+    background-color: #000000cb;
+}
+
+.cota {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.img-home {
+    width: 50%;
+    border-radius: 100px;
+}
+
+.about-section {
+    color: #7f8080;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.about-cards {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+hr {
+    height: 5px;
+    width: 5rem;
+    background-color: #7f8080;
+    border: 0;
+}
+
+.hrVariant {
+    display: inline-block;
+    width: 2.5rem;
+    height: 5px;
+    margin-right: 20px;
+}
+
+
+.title-description {
+    color: #7f8080;
+    font-size: 2rem;
+}
+
+.card {
+    flex-basis:20vw;
+    text-align: left;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.description p, ul {
+    font-size: 90%;
+}
+
+.card > button {
+    border: none;
+    box-shadow: 0 0 10px 1px #afb9cb;
+    border-radius: 10px 10px 0 0;
+    background-color: #000000;
+    color: #F6F1F1;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-icon, .completing-div {
+    width: 45px;
+}
+
+.card-hr {
+    height: 5px;
+    width: 5rem;
+    background-color: #e7e5e5;
+    border: 0;
+    border-radius: 3px;
+}
+
+.description {
+    box-shadow: 0 10px 10px 1px #afb9cb;
+    margin-top: 0;
+    padding: 2rem;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+}
+
+.decoration-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv {
+    margin: 1rem;
+    height: 40%;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.serv div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.serv p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.services-section {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 65vh;
+}
+
+.down-arrow {
+    width: 0;
+    height: 0;
+    border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 80px solid #000000;
+}
+
+#down-arrow {
+    display: flex;
+    justify-content: center;
+}
+
+#services > div {
+    position: relative;
+    top: -300px
+}
+
+.services-section > div > .cards {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: 40vh 40vh;
+    gap: 1rem;
+}
+.service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.service-card p {
+    color: #7f8080;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.section-description {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+
+.services-description {
+    font-size: 1.5rem;
+}
+
+.service-description {
+    color: #000000;
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cotacao-btn {
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color:#000000;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 5px;
+} 
+
+.img-service {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+#cotacao {
+    background-image: url("images/cotacao.jpg");
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+}
+
+.contact-info {
+    padding: 5rem;
+    background-color: #f6f1f16b;
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    backdrop-filter: blur(10px);
+    border-radius: 0 10px 10px 0;
+    
+}
+
+.contact-info h4 {
+    font-weight: 600;
+}
+
+.contact-info p {
+    color: #7f8080;
+}
+
+.form-div {
+    background-color: #00000071;
+    backdrop-filter: blur(10px);
+    font-family: 'Montserrat', sans-serif;
+    font-size: large;
+    padding: 5rem;
+    border-radius: 10px 0 0 10px;
+}
+
+
+input, select {
+    border-radius: 5px;
+    border: 0;
+    height: 30px;
+}
+
+.outroServ {
+    visibility: hidden;
+    width: 100%;
+}
+
+#outroServ {
+    width: 100%;
+}
+
+#cotacao h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.cotacao-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.cotacao-submit {
+    height: 50px;
+    border: 0;
+    background-color: #000000;
+    color: #F6F1F1;
+    font-size: large;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.hoveranim:hover {
+    filter: opacity(50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-logos img {
+    width: 30px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social-media-logos img:hover {
+    filter: opacity(50%);
+    transition: all 0.3s ease-in-out;
+}
+
+.social-media-logos {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
