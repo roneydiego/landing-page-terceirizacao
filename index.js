@@ -25,3 +25,54 @@ $("option").click((event) => {
         $(".outroServ").css("visibility", "hidden");
     }
 });
+
+var counter = 0;
+var sliderAtbeginning = true;
+$(document).ready(()=> {
+    setInterval(() => {
+        if (sliderAtbeginning) {
+            $(".clients-img").scrollLeft(counter++);
+            if (counter >= $(".clients-img").width()) {
+                sliderAtbeginning = false;
+            }
+        }
+        else {
+            $(".clients-img").scrollLeft(counter--);
+            if (counter === -100) {
+                sliderAtbeginning = true;
+            }
+        }
+    }, 15);
+});
+
+
+function startCounter(index) {
+    var numberData = $(".number-update");
+    var dataCounter = 0
+    var whatsTheNumber = (numberData[index].innerText)*1;
+    var step = 1;
+    if (whatsTheNumber <= 100) {
+        step = 1;
+    }
+    else if (whatsTheNumber <= 200){
+        step = 5;
+    }
+    else {
+        step = 25
+    }
+    setInterval(() => {
+        if (dataCounter <= whatsTheNumber) {
+            numberData[index].innerText = dataCounter;
+            dataCounter += step;
+        }
+    }, 60);
+}
+
+$(document).ready(() => {
+    $(".data-stats > *").slideDown();
+    startCounter(0);
+    startCounter(1);
+    startCounter(2);
+});
+
+
