@@ -529,6 +529,10 @@ footer {
     color: #7f8080;
 }
 
+.future-icon {
+    width: 1.5rem
+}
+
 .logo-and-menu {
     display: flex;
 }
