@@ -55,10 +55,10 @@ function startCounter(index) {
         step = 1;
     }
     else if (whatsTheNumber <= 200){
-        step = 5;
+        step = 2;
     }
     else {
-        step = 25
+        step = 50
     }
     setInterval(() => {
         if (dataCounter <= whatsTheNumber) {
