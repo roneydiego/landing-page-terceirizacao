@@ -26,25 +26,6 @@ $("option").click((event) => {
     }
 });
 
-var counter = 0;
-var sliderAtbeginning = true;
-$(document).ready(()=> {
-    setInterval(() => {
-        if (sliderAtbeginning) {
-            $(".clients-img").scrollLeft(counter++);
-            if (counter >= $(".clients-img").width()) {
-                sliderAtbeginning = false;
-            }
-        }
-        else {
-            $(".clients-img").scrollLeft(counter--);
-            if (counter === -100) {
-                sliderAtbeginning = true;
-            }
-        }
-    }, 15);
-});
-
 
 function startCounter(index) {
     var numberData = $(".number-update");
@@ -76,3 +57,7 @@ $(document).ready(() => {
 });
 
 
+$(".menu-btn, .close-btn").click(() => {
+    $(".nav-bar").slideToggle();
+    $(".nav-bar").css("display", "flex");
+});

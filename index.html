@@ -11,21 +11,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section class="header container">
-    <div>
+  <section id="home" class="container">
+    <div class="nav">
       <a href="index.html"><img class="business-logo" src="images/business-logo.png" alt=""></a>
       <ul class="nav-bar">
+        <img class="close-btn" src="images/close-btn.svg" alt="">
         <li><a class="item-nav" href="#home">Início <img class="nav-down-arrow" src="images/down-arrow.svg" alt=""></a></li>
         <li><a class="item-nav" href="#separator">Serviços <img class="nav-down-arrow" src="images/down-arrow.svg" alt=""></a></li>
         <li><a class="item-nav" href="#about">Quem Somos <img class="nav-down-arrow" src="images/down-arrow.svg" alt=""></a></li>
         <li><a class="item-nav" href="#cotacao">Contato <img class="nav-down-arrow" src="images/down-arrow.svg" alt=""></a></li>
       </ul>
-      <a class="contact-btn btn cota" href="#cotacao">FAZER COTAÇÃO</a>
+      <div class="flex-vertical">
+        <a class="contact-btn btn cota" href="#cotacao">FAZER COTAÇÃO</a>
+        <img class="menu-btn" src="images/icons8-menu.svg" alt="">
+      </div>
     </div>
-  </section>
-
-  <section id="home" class="home container">
-    <div>
+    <div class="hero">
       <h1>Terceirização de mão de obra</h1>
       <p class="brief-description">Profissionais altamente qualificados das mais diversas áreas.</p>
       <div>
@@ -49,77 +50,76 @@
     </div>
   </section>
 
-  <section id="separator" class="container">
-  </section>
-
-  <section id="services" class="services-section container">
-    <div>
-      <h2 class="section-description services-description"><hr class="hrVariant">Serviços</h2>
-      <p class="title-description">Conheça os nossos serviços</p>
-      <div class="cards">
-        <div class="service-card">
-          <img class="img-service" src="images/limpeza.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Limpeza</h3>
-            <p>A primeira impressão é a que fica. Te ajudamos a manter seu espaço corporativo limpo e higienizado!</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div> 
+  <section id="services" class="">
+    <div class="blank-space">
+      <div class="container">
+        <h2 class="section-description services-description"><hr class="hrVariant">Serviços</h2>
+        <p class="title-description">Conheça os nossos serviços</p>
+      </div>
+    </div>
+    <div class="cards container">
+      <div class="service-card">
+        <img class="img-service" src="images/limpeza.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Limpeza</h3>
+          <p>A primeira impressão é a que fica. Te ajudamos a manter seu espaço corporativo limpo e higienizado!</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
+        </div> 
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/copa.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Copa</h3>
+          <p>Preparação de lanches, limpeza de objetos, organização de mesas, além de servir clientes e convidados com cortesia.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/copa.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Copa</h3>
-            <p>Preparação de lanches, limpeza de objetos, organização de mesas, além de servir clientes e convidados com cortesia.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/manutencao2.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Manutenção</h3>
+          <p>Manutenção preventiva, corretiva e preditiva. Nossos ténicos estão preparados para atender qualquer demanda.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/manutencao2.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Manutenção</h3>
-            <p>Manutenção preventiva, corretiva e preditiva. Nossos ténicos estão preparados para atender qualquer demanda.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/recepcao.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Recepcionista</h3>
+          <p>Atendimento e prestação de informações humanizado. Faça seus clientes se impressionarem e voltarem sempre!</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/recepcao.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Recepcionista</h3>
-            <p>Atendimento e prestação de informações humanizado. Faça seus clientes se impressionarem e voltarem sempre!</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/telefone.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Telefonista</h3>
+          <p>Atender pedidos de informações. Anotar recados e registrar chamadas. Utilizar recursos de informática.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/telefone.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Telefonista</h3>
-            <p>Atender pedidos de informações. Anotar recados e registrar chamadas. Utilizar recursos de informática.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/secretaria.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Secretária</h3>
+          <p>Realizar tarefas administrativas, organizar arquivos e documentos. Atuar com agendamento de reuniões.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/secretaria.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Secretária</h3>
-            <p>Realizar tarefas administrativas, organizar arquivos e documentos. Atuar com agendamento de reuniões.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/jardinagem.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Jardinagem</h3>
+          <p>Manter o solo fértil e as plantas saudáveis e bonitas, para criar um jardim bonito e harmonioso.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
-        <div class="service-card">
-          <img class="img-service" src="images/jardinagem.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Jardinagem</h3>
-            <p>Manter o solo fértil e as plantas saudáveis e bonitas, para criar um jardim bonito e harmonioso.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
-        </div>
-        <div class="service-card">
-          <img class="img-service" src="images/construcao.jpg" alt="">
-          <div class="serv">
-            <h3 class="service-description">Construção</h3>
-            <p>Desenvolver o bem estar, preservando o meio ambiente, por meio de obras nos segmentos de infraestrutura.</p>
-            <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
-          </div>
+      </div>
+      <div class="service-card">
+        <img class="img-service" src="images/construcao.jpg" alt="">
+        <div class="serv">
+          <h3 class="service-description">Construção</h3>
+          <p>Desenvolver o bem estar, preservando o meio ambiente, por meio de obras nos segmentos de infraestrutura.</p>
+          <a href="#cotacao" class="cotacao-btn">fazer cotação</a>
         </div>
       </div>
     </div>
@@ -129,7 +129,7 @@
     <div class="down-arrow"></div>
   </section>
 
-  <section id="about" class="about-section container">
+  <section id="about" class="container">
     <div>
       <h2 class="section-description"><hr class="hrVariant">Quem somos?</h2>
       <p class="title-description">Conheça mais sobre nós</p>
@@ -179,6 +179,13 @@
   </section>
 
   <section id="clients" class="container">
+    <div>
+      <h2 class="section-description white-h2"><hr class="hrVariant">Nossos Clientes</h2>
+      <p class="title-description">Deixamos o nosso trabalho falar por si mesmo. Veja o que eles têm a dizer</p>
+    </div>
+    <div class="testimonials">
+      <div></div>
+    </div>
     <div class="clients-img">
       <img src="images/sefazse.png" alt="">
       <img src="images/ifs.png" alt="">
@@ -186,13 +193,6 @@
       <img src="images/sergipetec1.png" alt="">
       <img src="images/smtt.png" alt="">
       <img src="images/tjse.png" alt="">
-    </div>
-    <div>
-      <h2 class="section-description white-h2"><hr class="hrVariant">Nossos Clientes</h2>
-      <p class="title-description">Deixamos o nosso trabalho falar por si mesmo. Veja o que eles têm a dizer</p>
-    </div>
-    <div class="testimonials">
-      <div></div>
     </div>
   </section>
 
@@ -205,7 +205,7 @@
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" required>
         <label for="tel">Telefone</label>
-        <input type="tel" name="tel" id="tel" placeholder="(__) - _____-____" data="(__) - _____-____" required>
+        <input type="tel" name="tel" id="tel" placeholder="(__) _____-____" maxlength="13" required>
 
         <label for="servico">Serviço a terceirizar</label>
         <select name="servico" id="servico" required>
