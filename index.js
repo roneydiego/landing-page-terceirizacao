@@ -3,10 +3,6 @@ var serviceCard = $(".service-card");
 $(".cotacao-btn").addClass("hoveranim");
 
 
-$(".cotacao-btn").click((event) => {
-    var choosenArea = event.currentTarget.parentElement.children[0].innerText;
-});
-
 $(".description").slideToggle();
 
 var btnCard = $(".btn-card");
