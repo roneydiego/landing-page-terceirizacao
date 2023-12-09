@@ -355,13 +355,13 @@ hr {
 
 .cotacao-btn {
     text-transform: uppercase;
+    width: fit-content;
     color: #ffffff;
     background-color:#000000;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: small;
-    text-align: center;
     padding: 10px;
     border-radius: 5px;
 } 
@@ -570,6 +570,11 @@ footer {
 
     html {
         font-size: 80%;
+    }
+
+    .cotacao-btn {
+        width: auto;
+        text-align: center;
     }
 }
 
