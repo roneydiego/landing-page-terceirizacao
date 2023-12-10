@@ -55,5 +55,8 @@ $(document).ready(() => {
 
 $(".menu-btn, .close-btn").click(() => {
     $(".nav-bar").slideToggle();
-    $(".nav-bar").css("display", "flex");
+    $(".nav-bar").css({
+        "display":"flex",
+        "width":"40vw"
+    });
 });

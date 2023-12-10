@@ -40,6 +40,7 @@ html {
 
 .nav-bar {
     display: flex;
+    align-items: center;
     gap: 2rem;
     list-style: none;
     font-family: 'Montserrat', sans-serif;
@@ -349,7 +350,7 @@ hr {
     color: #000000;
     font-size: 1.3rem;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -360,7 +361,7 @@ hr {
     background-color:#000000;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: small;
     padding: 10px;
     border-radius: 5px;
@@ -404,7 +405,34 @@ hr {
 
 .testimonials {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.testifier {
+    text-align: center;
+    background-color: #414141;
+    box-shadow: 0 0 20px 1px #414141;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 500px;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+}
+
+.testifier > p {
+    color: #7f8080;
+}
+
+.testifier > img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 #cotacao {
@@ -572,17 +600,24 @@ footer {
         font-size: 80%;
     }
 
-    .cotacao-btn {
-        width: auto;
-        text-align: center;
-    }
-
     .btn {
         width: 150px;
     }
 
     .social-media-logos img {
         width: 25px;
+    }
+
+    .serv > p {
+        font-size: 1.5rem;
+    }
+
+    .cotacao-btn {
+        font-size: 1.2rem;
+    }
+
+    .serv > h3 {
+        font-size: 1.9rem;
     }
 }
 
@@ -597,14 +632,14 @@ footer {
         right: 0;
         top: 0;
         margin: 0;
-        padding-top: 5vh;
+        padding-top: 10vh;
     }
 
     .close-btn {
         display:inherit;
         position:absolute;
-        left: 0;
-        top: 0;
+        left: 10px;
+        top: 10px;
         padding: 0;
         width: 30px;
     }
